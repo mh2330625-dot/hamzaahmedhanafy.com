@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#214b3b">
+<title>حمزة أحمد حنفي | البطاقة الرقمية</title>
+<meta name="description" content="البطاقة الرقمية الشخصية لحمزة أحمد حنفي.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --green: #214b3b;
+  --deep: #163528;
+  --cream: #f4ecdc;
+  --paper: #fffaf0;
+  --gold: #b69b65;
+  --ink: #26372e;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; min-height: 100vh; padding: 22px;
+  display: grid; place-items: center;
+  background: radial-gradient(circle at top, #e6dcc8, #f4ecdc 48%, #e8decb);
+  color: var(--ink); font-family: "Amiri", serif;
+}
+.card {
+  width: min(100%, 440px); background: var(--paper);
+  border: 1px solid #c9b98f; border-radius: 28px; overflow: hidden;
+  box-shadow: 0 22px 65px #183b2b20;
+}
+.top {
+  height: 135px; background: linear-gradient(135deg, var(--deep), var(--green));
+  position: relative; display: grid; place-items: center;
+}
+.top:before, .top:after {
+  content: ""; position: absolute; inset: 14px;
+  border: 1px solid #c9b277; border-radius: 18px;
+}
+.top:after { inset: 25px; border-style: dashed; opacity: .35; }
+.seal {
+  width: 76px; height: 76px; border: 1px solid var(--gold); border-radius: 50%;
+  display: grid; place-items: center; color: #f4e8c8;
+  font-family: "Aref Ruqaa", serif; font-size: 32px; z-index: 1;
+  background: var(--green);
+}
+main { padding: 0 27px 28px; text-align: center; }
+.photo {
+  width: 118px; height: 118px; border-radius: 50%; margin: -1px auto 12px;
+  border: 1px solid var(--gold); background: #e7decb;
+  display: grid; place-items: center; color: var(--green); font-size: 13px;
+}
+h1 {
+  font-family: "Aref Ruqaa", "Amiri", serif; font-size: 35px;
+  line-height: 1.35; color: var(--green); margin: 8px 0 4px;
+}
+.subtitle { font-size: 18px; color: #6e765e; margin: 0; }
+.ornament { color: var(--gold); letter-spacing: 7px; margin: 16px 0; }
+.bio { font-size: 17px; line-height: 1.9; margin: 0 auto 20px; max-width: 310px; }
+.actions { display: grid; gap: 10px; }
+a.btn {
+  display: flex; align-items: center; justify-content: center; gap: 9px;
+  text-decoration: none; border-radius: 14px; padding: 12px 16px;
+  font-size: 18px; border: 1px solid var(--green); color: var(--green);
+}
+a.primary { background: var(--green); color: #fff8e9; }
+.note { font-size: 13px; color: #77715f; margin: 18px 0 0; }
+footer { background: #eee4d1; text-align: center; padding: 12px; color: #6b705e; font-size: 13px; }
+</style>
+</head>
+<body>
+<article class="card">
+  <header class="top"><div class="seal">ح</div></header>
+  <main>
+    <div class="photo" aria-label="مكان الصورة الشخصية">الصورة الشخصية</div>
+    <h1>حمزة أحمد حنفي</h1>
+    <p class="subtitle">مهندس</p>
+    <div class="ornament" aria-hidden="true">❧ ✦ ❧</div>
+    <p class="bio">مرحبًا بك في بطاقتي الرقمية. يسعدني التواصل عبر بيانات الاتصال التالية.</p>
+    <div class="actions">
+      <a class="btn primary" href="tel:+201144768614">☎ اتصال هاتفي</a>
+      <a class="btn" href="https://wa.me/201144768614" target="_blank" rel="noopener">واتساب</a>
+      <a class="btn" href="mailto:hanafyhamza144@gmail.com">✉ البريد الإلكتروني</a>
+    </div>
+    <p class="note">بيانات التواصل المعروضة هنا عامة ومتاحة لكل زائر.</p>
+  </main>
+  <footer>بطاقة تعريف رقمية • تصميم بيج وأخضر</footer>
+</article>
+</body>
+</html>
